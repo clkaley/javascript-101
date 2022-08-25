@@ -156,3 +156,35 @@ true , false => false
 true, true => true
 true, false => true
 false, false => false
+
+
+
+
+##### String Metodlar
+
+```
+let ad = "Aleyna";
+let soyad = "Çelik";
+let yas = 23;
+let sehir = "İstanbul";
+
+let mesaj = "Benim adım " + ad + ' ve soyadım ' + soyad + '. ' + sehir + '\'de yaşıyorum.' + 'Emekliliğe ' + (65 - yas) + ' yılım kaldı.';
+
+// Template literals 
+mesaj = `Benim adım ${ad} ve soyadım ${soyad}. ${sehir}'de yaşıyorum.Emekliliğe ${65 - yas} yılım kaldı.`;
+
+// ternary operators
+let emeklilik = (65 - yas > 0) ? "Emekliliğe " + (65-yas) + " yıl kaldı." : "Zaten emekli oldunuz.";
+mesaj = `Benim adım ${ad} ve soyadım ${soyad}. ${sehir}'de yaşıyorum.${emeklilik}`;
+
+console.log(mesaj);
+
+```
+
+concat():string birleştirme
+search(): dizi içinde arama yapıp bulduğu karakterin indeks numarasını döndürür.
+toUpperCase()-toLowerCase():harf çevrilmesi büyük küçük
+trim():dizisinin başındaki ve sonundaki boşluk karakterlerini sileriz.
+slice(): başlangıç ve bitiş indeksi vererek aralıktaki karakter dizisini alabiliriz.
+replace():belirtilen bir string bilgiyi başka bir string bilgi ile güncelleyebiliriz.
+split():dizisini belirtilen karakterden parçalara ayırarak bir dizi oluşturur.
