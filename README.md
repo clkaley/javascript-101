@@ -135,3 +135,24 @@ sonuc = (a > b)
 sonuc = (a < b)
 sonuc = (a <= b)
 ```
+
+
+###### 02-03- If Else
+
+```
+if (condition) {
+  //  block of code to be executed if the condition is true
+} else {
+  //  block of code to be executed if the condition is false
+}
+```
+
+
+* and  &&
+true , true => true
+true , false => false
+
+* or ||
+true, true => true
+true, false => true
+false, false => false
