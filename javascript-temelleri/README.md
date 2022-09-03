@@ -500,37 +500,109 @@ burda return değeri döner ama satıra yazdırma ama o değeri vardır mevcutta
 
 ```
 
+##### Scopes
+
+
+Fonksiyon kapsamı içerisinden dışarda olan kapsama erişebiliyoruz.
+
+
+```
+var isim="aleyna" //global scope
+function yaz(){
+    console.log(isim);
+}
+yaz();
+
+
+Çıktı
+aleyna
+```
+
+
+Fonksiyon önce kendi kapsamına bakar bulamazsa global scope a gider.
+```
+var isim="aleyna"
+
+function yaz(){
+    var isim="ayşe"
+    console.log(isim);
+}
+
+yaz();
+console.log("isim",isim);
+
+Çıktı
+ayse
+aleyna
+```
+
 
 
 ```
 
-```
+function yaz(){
+    var isim="ayşe"
+    var yas=25;
+    console.log(isim,yas);
+}
 
+yaz();
 
-```
-
-```
-
-
-
-```
-
-```
-
-
-
-```
-
-```
-
-
-```
-
+Çıktı
+ayşe 25
 ```
 
 
 
 ```
+function yaz(){
+    var isim="ayşe"
+    var yas=25;
+    console.log(isim,yas);
+}
+yaz();
+console.log(yas);
 
+Çıktılar
+ayşe 25
+Uncaught ReferenceError: yas is not defined at hata çünkü global scope da ulaşmalıyım. Dar kapsamdan geniş kapsama ulaşamıyoruz malesef :(
 ```
 
+if ve for bloğu ayrı bir kapsam oluşturumuyo global scope dur.
+```
+if(true){
+    var isim="ali"
+    console.log(isim);
+}
+console.log(isim);
+
+Çıktı
+ali
+ali
+```
+
+* yani fonksiyonlar kendi scope alanlarını oluşturur
+* block (let const) içerisinde yeni bir scope oluşmaz
+
+
+```
+if(true){
+    let isim="mahmut"
+    console.log(isim);
+}
+console.log(isim);
+
+Çıktı
+mahmut
+ali
+```
+
+
+
+```
+const adres="istanbul"
+adres="Kocaeli"
+
+Çıktı
+Uncaught TypeError: Assignment to constant variable at
+```
