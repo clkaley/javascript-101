@@ -213,9 +213,38 @@ console.log(mesaj);
 ```
 
 
-
+### Numbers
 
 ```
+let sonuc;
+console.log(sonuc);
+console.log("tipi",typeof sonuc);
+
+Çıktılar
+undefined
+tipi undefined
+
+
+
+let sonuc;
+sonuc=10;
+console.log(sonuc);
+console.log("tipi",typeof sonuc);
+
+Çıktılar
+10
+tipi number
+
+
+
+let sonuc;
+sonuc="10";
+console.log(sonuc);
+console.log("tipi",typeof sonuc);
+
+Çıktılar
+10
+tipi string
 
 ```
 
