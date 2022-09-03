@@ -215,6 +215,7 @@ console.log(mesaj);
 
 ### Numbers
 
+
 ```
 let sonuc;
 console.log(sonuc);
@@ -223,9 +224,10 @@ console.log("tipi",typeof sonuc);
 Çıktılar
 undefined
 tipi undefined
+```
 
 
-
+```
 let sonuc;
 sonuc=10;
 console.log(sonuc);
@@ -234,9 +236,11 @@ console.log("tipi",typeof sonuc);
 Çıktılar
 10
 tipi number
+```
 
 
 
+```
 let sonuc;
 sonuc="10";
 console.log(sonuc);
@@ -249,6 +253,141 @@ tipi string
 ```
 
 
+
+
+### Dates Times
+```
+let simdi=new Date()//şimdiki tarih bilgisi, saat bilgisi var
+console.log("simdi",simdi);
+console.log("sonuc",typeof simdi);
+
+
+Çıktı
+Sat Sep 03 2022 13:26:28 GMT+0300 (GMT+03:00)
+object
+```
+
+
+
+```
+let simdi=new Date() 
+let sonuc=simdi.getDate();//gün
+
+console.log("sonuc", sonuc);
+
+Çıktılar
+3 //3 eylül dü
+```
+
+
+
+
+
+```
+let simdi=new Date() 
+let sonuc=simdi.getDay();//gün bilgisi
+
+console.log("sonuc", sonuc);
+
+Çıktılar
+6 -> Cumartesi demek
+```
+
+
+
+
+
+```
+let simdi=new Date() 
+let sonuc=simdi.getFullYear(); //yıl bilgisi
+
+console.log("sonuc", sonuc);
+
+Çıktılar
+2022
+```
+
+
+
+
+
 ```
 
 ```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+```
+
+```
+
+
