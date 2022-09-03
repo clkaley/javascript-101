@@ -2,13 +2,13 @@
 
 ### Javascript Temelleri
 
-###### 01-Değişkenler
+###### Değişkenler
 
 
-###### 02-Operatörler
+###### Operatörler
 
 
-###### 03-If Else
+###### If Else
 
 
 ##### String Metodlar
