@@ -443,37 +443,93 @@ for(let i=0;i<10;i++){
 ![Ekran Görüntüsü (541)](https://user-images.githubusercontent.com/74673470/188281820-1c3599bb-460a-4c68-9617-65efc7b37239.png)
 
 
+
+##### Fonksiyonlar
+
 ```
+function selamlama(){
+    console.log("selam");
+}
+selamlama()
+
+Çıktı
+selam
+```
+
+
+```
+function merhaba(msg){
+    console.log(msg);
+}
+
+merhaba("merhaba canım")
+
+Çıktı
+merhaba canım
+```
+
+
+```
+function yasHesaplama(dogumYili){
+    console.log( new Date().getFullYear()-dogumYili);
+}
+
+yasHesaplama(1990);
+yasHesaplama(1952);
+yasHesaplama(1998);
+
+Çıktılar
+32
+70
+24
+```
+
+
+
+```
+function yasHesaplama(dogumYili){
+    return new Date().getFullYear()-dogumYili;
+}
+
+yasHesaplama(1990)
+let yasAhmet=yasHesaplama(1990);
+
+Çıktı
+burda return değeri döner ama satıra yazdırma ama o değeri vardır mevcutta
+32
 
 ```
 
 
-```
-
-```
-
 
 ```
 
 ```
+
+
 ```
 
 ```
+
+
+
 ```
 
 ```
+
+
+
 ```
 
 ```
+
+
 ```
 
 ```
-```
 
-```
-```
 
-```
+
 ```
 
 ```
