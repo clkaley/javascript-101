@@ -163,6 +163,29 @@ false, false => false
 ##### String Metodlar
 
 ```
+let kurs="  Komple Web Geliştirme Eğitimi   "
+
+
+Çıktılar:
+sonuc komple web geliştirme eğitimi
+KOMPLE WEB GELIŞTIRME EĞITIMI
+29
+e Web Geliştirme Eğitimi
+Komple
+Komple frontEND Geliştirme Eğitimi
+2
+['', '', 'Komple', 'Web', 'Geliştirme', 'Eğitimi', '', '', '']
+Çıktıları yok örnek olarak verildi
+sonuc=kurs.trim() //sağ ve soldan boşluk siler
+sonuc=kurs.trimStart() //baştaki boşlukları siler
+sonuc=kurs.trimEnd() //sondaki boşlukları siler
+```
+
+
+
+
+
+```
 let ad = "Aleyna";
 let soyad = "Çelik";
 let yas = 23;
@@ -181,10 +204,14 @@ console.log(mesaj);
 
 ```
 
-concat():string birleştirme
-search(): dizi içinde arama yapıp bulduğu karakterin indeks numarasını döndürür.
-toUpperCase()-toLowerCase():harf çevrilmesi büyük küçük
-trim():dizisinin başındaki ve sonundaki boşluk karakterlerini sileriz.
-slice(): başlangıç ve bitiş indeksi vererek aralıktaki karakter dizisini alabiliriz.
-replace():belirtilen bir string bilgiyi başka bir string bilgi ile güncelleyebiliriz.
-split():dizisini belirtilen karakterden parçalara ayırarak bir dizi oluşturur.
+
+
+
+```
+
+```
+
+
+```
+
+```
