@@ -2,7 +2,7 @@
 
 ### Javascript Temelleri
 
-###### 01-Değişkenler
+##### 01-Değişkenler
 
 ```
 let urunAd="vestel-tv"; 
@@ -100,7 +100,7 @@ sira string
 ```
 
 
-###### 02-Operatörler
+##### 02-Operatörler
 
 * Aritmetik Operatörler
 " + - * / % şeklindedir"
@@ -137,7 +137,7 @@ sonuc = (a <= b)
 ```
 
 
-###### 02-03- If Else
+##### 02-03- If Else
 
 ```
 if (condition) {
@@ -213,7 +213,7 @@ console.log(mesaj);
 ```
 
 
-### Numbers
+##### Numbers
 
 
 ```
@@ -255,7 +255,7 @@ tipi string
 
 
 
-### Dates Times
+##### Dates Times
 ```
 let simdi=new Date()//şimdiki tarih bilgisi, saat bilgisi var
 console.log("simdi",simdi);
@@ -308,4 +308,104 @@ console.log("sonuc", sonuc);
 ```
 
 
+##### Diziler
+
+```
+let urun1="iphone 12"
+let urun2="iphone 12"
+let urun3="iphone 12"
+
+let urunler=["iphone 12i","iphone 13","iphone 14"];
+let fiyatlar=[9000,2000,3000];
+
+console.log("ürünler:",urunler);
+console.log("fiyatlar:",fiyatlar);
+```
+
+![Ekran Görüntüsü (539)](https://user-images.githubusercontent.com/74673470/188269140-53d24f28-9ac8-4418-b18a-c557d6a1c1cd.png)
+
+
+
+###### Dizi Metodları
+
+```
+let ogrenciler=["çınar","ayşe","fatma"]
+console.log("ogrenciler:" ,ogrenciler);
+console.log("ogrencilerin uzunluğu:" ,ogrenciler.length);
+console.log("ogrencilerin toString:" ,ogrenciler.toString());
+console.log("öğrenciler join",ogrenciler.join(" "));
+
+
+Çıktılar:
+ogrenciler: (3) ['çınar', 'ayşe', 'fatma']
+ogrencilerin uzunluğu: 3
+ogrencilerin toString: çınar,ayşe,fatma
+öğrenciler join çınar ayşe fatma
+```
+
+
+
+```
+
+```
+
+
+
+```
+
+```
+
+
+
+```
+
+```
+
+
+```
+
+```
+
+
+
+
+```
+
+```
+
+
+```
+
+```
+
+
+```
+
+```
+
+
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
 
