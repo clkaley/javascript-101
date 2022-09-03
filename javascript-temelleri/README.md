@@ -423,17 +423,24 @@ sinema
 
 
 
+
+##### Döngüler
+
+
+```
+for (expression 1; expression 2; expression 3) {
+  // code block to be executed
+}
 ```
 
 
 ```
-
-
-
-
+for(let i=0;i<10;i++){
+    console.log(i);
+}
 ```
 
-```
+![Ekran Görüntüsü (541)](https://user-images.githubusercontent.com/74673470/188281820-1c3599bb-460a-4c68-9617-65efc7b37239.png)
 
 
 ```
