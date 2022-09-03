@@ -399,6 +399,8 @@ console.log(user.adres.sehir);
 kocaeli
 izmit
 
+```
+
 
 
 ```
@@ -417,6 +419,9 @@ console.log(user.hobiler[0]);
 
 Çıktılar
 sinema
+```
+
+
 
 ```
 
