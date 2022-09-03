@@ -344,25 +344,82 @@ ogrencilerin toString: çınar,ayşe,fatma
 ```
 
 
-
-```
-
-```
+##### Objects
 
 
 
 ```
+let user={
+    "name":"ali",
+    "lastname":"turan",
+}
+console.log(user);
+console.log(typeof user);
 
+Çıktılar
+{name: 'ali', lastname: 'turan'}
+object
 ```
 
 
 
 ```
+let user={
+    "name":"ali",
+    "lastname":"turan",
+    "yas":38,
+    "adres":"istanbul"
+  
+}
+console.log(user.name);
+console.log(user.yas);
 
+Çıktılar
+ali
+38
 ```
 
 
+
 ```
+let user={
+    "name":"ali",
+    "lastname":"turan",
+    "yas":38,
+    "adres":{
+        "sehir":"kocaeli",
+        "ilçe":"izmit"
+    }
+}
+
+console.log(user.adres.ilçe);
+console.log(user.adres.sehir);
+
+Çıktılar
+kocaeli
+izmit
+
+
+
+```
+let user={
+    "name":"ali",
+    "lastname":"turan",
+    "yas":38,
+    "adres":{
+        "sehir":"kocaeli",
+        "ilçe":"izmit"
+    },
+    "hobiler":["sinema","kitap","yüzme"]
+}
+
+console.log(user.hobiler[0]);
+
+Çıktılar
+sinema
+
+```
+
 
 ```
 
