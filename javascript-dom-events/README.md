@@ -196,15 +196,21 @@ ul.insertAdjacentHTML('beforeEnd',li)
 ```
 
 
+
+#### Element silme 
+
+
+
+index.js
+```
+document.querySelector("#task-list").remove()
 ```
 
+
+
+Tek eleman silme
 ```
-
-
-
-
-```
-
+document.querySelector("#task-list").children[0].remove()
 ```
 
 
