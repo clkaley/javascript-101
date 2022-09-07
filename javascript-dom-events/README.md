@@ -152,13 +152,47 @@ console.log(sonuc);
 
 
 
-```
+
+#### Dom Elementi Oluşturma
+
 
 ```
-
-
+let sonuc;
+ul = document.getElementById('task-list');
+let count=ul.children.length
+console.log(count);
+let li = `  <li class="task">
+<div class="form-check">
+    <input type="checkbox" id="${count+1}"
+    class="form-check-input">
+    <label for="${count+1}">Hello ${count+1}</label>
+</div>
+</li>`;
+console.log(li);
 ```
 
+
+![Ekran Görüntüsü (556)](https://user-images.githubusercontent.com/74673470/188887414-8e42c24f-04b0-4b12-8c8d-f38392ff25ed.png)
+
+
+index.js
+Elemanı direkt sayfada gösterme
+```
+let sonuc;
+
+ul = document.getElementById('task-list');
+let count=ul.children.length
+console.log(count);
+let li = `  <li class="task">
+<div class="form-check">
+    <input type="checkbox" id="${count+1}"
+    class="form-check-input">
+    <label for="${count+1}">Hello ${count+1}</label>
+</div>
+</li>`;
+console.log(li);
+
+ul.insertAdjacentHTML('beforeEnd',li)
 ```
 
 
