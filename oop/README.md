@@ -150,3 +150,18 @@ function Soru(soruMetni, cevapSecenekler, dogruCevap) {
 
     console.log(soru1.cevabiKontrolEt("b"));
 ```
+
+
+
+### Prototype
+
+Prototype (prototip) özelliği Javascript’te Inheritance’ın (kalıtımın) temelini oluşturmaktadır. Inheritance var olan class’ları kullanarak, yeni class’lar tanımlanmasına olanak sağlamaktadır.
+
+
+index.js
+```
+  Soru.prototype.cevabiKontrolEt=function(cevap){
+    return cevap === this.dogruCevap;
+  }
+```
+
