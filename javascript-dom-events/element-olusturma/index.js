@@ -12,7 +12,12 @@ for (let index in gorevListesi) {
 </li>`;
 ul.insertAdjacentHTML("beforeEnd", li);
 }
-// console.log(count);
+
+//document.querySelector("#task-list").remove()
+document.querySelector("#task-list").children[0].remove()
+
+
+
 
 
 
