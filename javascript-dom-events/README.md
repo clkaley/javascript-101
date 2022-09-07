@@ -214,17 +214,22 @@ document.querySelector("#task-list").children[0].remove()
 ```
 
 
+
+#### Event Listeners
+
+```
+document.getElementById("myBtn").addEventListener("click", displayDate);
 ```
 
 ```
+   document.querySelector("#btnAddNewTask").addEventListener("click", newTask);
 
+        function newTask(event) {
+            // console.log(event.target);
+            event.target.classList.add("btn-lg");
 
-
-
-
-
-```
-
+            event.preventDefault();
+        }
 ```
 
 
