@@ -66,34 +66,66 @@ document.getElementById("title").style.color="red"
 ```
 
 
+#### Çoklu Element Seçimi
 
-
+index.html
 ```
-
-```
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-```
-
+    <ul id="task-list">
+        <li class="task">
+            Görev 1
+        </li>
+        <li class="task">
+            Görev 2
+        </li>
+        <li class="task">
+            Görev 3
+        </li>
+    </ul>
 ```
 
 
 
 
+
+
+```
+let sonuc;
+sonuc=document.getElementsByClassName('task');
+console.log(sonuc);
+```
+ Collection döner
+![Ekran Görüntüsü (552)](https://user-images.githubusercontent.com/74673470/188875698-7cf2970c-b256-43a0-ae08-acb57c6fa5d8.png)
+
+
+
+ilk elemana ulaşmak için [] köşeli parantez kullanılır ve içindeki değere erişmek istedik onuda innerHtml ile yapıyoeuz :)s
+```
+let sonuc;
+sonuc=document.getElementsByClassName('task')[0].innerHTML;
+console.log(sonuc);
 ```
 
+
+
+tüm hepsini tek tek bastırma işi
+```
+let sonuc;
+sonuc=document.getElementsByClassName('task');
+
+for(let i=0;i<=sonuc.length;i++){
+    console.log(sonuc[i]);
+}
+// index numarası vermeden yazılabilecek for döngüsü (of yerine in yazarsak index numaralarına ulaşırız.)
+
+for(let task of sonuc){
+    console.log(sonuc);
+}
+
+her bir task a style verme
+for(let task of sonuc){
+    task.style.color="red"
+    console.log(sonuc);
+}
 ```
 
 
