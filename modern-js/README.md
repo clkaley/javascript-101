@@ -151,6 +151,189 @@ console.log(tekSayilar);
 
 
 ##### Spread Operator
+Özellikle dizi kopyalama işlemlerinde işimize yarıyor.
+
+
+```
+const mesaj=["benim","adım","aleyna"];
+
+let sonuc="";
+for (let msg of mesaj){
+    sonuc+=msg+" ";
+}
+
+console.log(sonuc);
+Çıktı 
+benim adım aleyna
+```
+
+
+
+Spread operatörüyle kolayca yaptık :)
+
+```
+const mesaj=["benim","adım","aleyna"];
+console.log(...mesaj)
+
+Çıktı
+benim adım aleyna
+```
+
+
+
+Dizileri birleştirmek isterse dizi 1 ve 2 dizinin alt elemanları olur.
+```
+const dizi1=["bir","iki"];
+const dizi2=["iki","uc"];
+
+const dizi3=[dizi1,dizi2];
+console.log(dizi3);
+
+Çıktı
+(2) [Array(2), Array(2)]
+0
+: 
+(2) ['bir', 'iki']
+1
+: 
+(2) ['iki', 'uc']
+```
+
+
+
+
+Burda Spread Operatörüyle bunu yaparsak dizinin direkt elemanları olarak geliyor
+```
+const dizi1=["bir","iki"];
+const dizi2=["iki","uc"];
+
+const dizi4=[...dizi1,...dizi2]
+console.log(dizi4);
+
+Çıktı
+['bir', 'iki', 'iki', 'uc']
+```
+
+
+
+
+* Referans Kopyalama
+Kopyalama işlemi referans olarak yapılıyor. Bu elemanlardan herhangi bir tanesinde değişiklik yaparsak iki dizide de mevcut değişiklik yansır
+```
+const x=[1,2,3,4,5,6];
+const y=x; //referans kopyalama
+console.log("x:",x,"y:",y);
+
+Çıktı
+x: (6) [1, 2, 3, 4, 5, 6] 
+y: (6) [1, 2, 3, 4, 5, 6]
+
+```
+
+
+
+Değişiklik İçin
+
+```
+const x=[1,2,3,4,5,6];
+const y=x; 
+x[2]="selam"
+console.log("x:",x,"y:",y);
+
+Çıktı
+x: (6) [1, 2, 'selam', 4, 5, 6] 
+y: (6) [1, 2, 'selam', 4, 5, 6]
+```
+
+
+
+
+
+
+* Value Kopyalama
+```
+const t=[1,2,3,4,5,6];
+const w=[...t]; //value kopyalama
+console.log("t:",t,"w:",w);
+
+Çıktı
+t: (6) [1, 2, 3, 4, 5, 6] 
+w: (6) [1, 2, 3, 4, 5, 6]
+```
+
+Değişklik için
+```
+const t=[1,2,3,4,5,6];
+const w=[...t]; 
+t[2]="hello"
+console.log("t:",t,"w:",w);
+
+Çıktı
+t: (6) [1, 2, 'hello', 4, 5, 6] 
+w: (6) [1, 2, 3, 4, 5, 6]
+```
+
+
+
+* Obje için spread operatör kullanımı
+```
+const user={
+    name:"aleyna",
+    surname:"celik"
+};
+
+const address={
+    city:"İstanbul",
+    street:"Çakı"
+}
+
+const userInfo=({...user,...address})
+console.log(userInfo);
+
+Çıktı
+{name: 'aleyna', surname: 'celik', city: 'İstanbul', street: 'Çakı'}
+
+```
+
+
+* Fonksiyon İçinde Spread Operator
+Fonksiyon içinde kullanımına rest parametreleri deniyor.
+```
+
+
+function toplam(...args){
+    let sonuc=0;
+    for (let sayi of args){
+        sonuc+=sayi
+    }
+    return sonuc
+}
+
+console.log(toplam(1,35,4));
+console.log(toplam(1,7,369,357));
+Çıktı
+40
+734
+
+```
+
+
+
+
+```
+function bilgileriGoster(firstname,lastname,...addres){
+    console.log(firstname,lastname,addres);
+}
+
+bilgileriGoster("aleyna","celik","istanbul","kocaeli")
+Çıktı
+aleyna celik (2) ['istanbul', 'kocaeli']
+```
+
+
+
+
+
 
 
 ##### Destructuring
