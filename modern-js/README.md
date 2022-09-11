@@ -618,159 +618,42 @@ console.log(kisi1.yasHesapla());
 
 
 
-
-
-```
-
-```
-
-
-
-
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-```
-
-```
-
-
-
 ##### Getter & Setter
+Bir değer set etmek yani bir property e bir değer atamak istediğimiz zaman set metodu kullanılacak.
+Bir nesne üzerinden bir değer almak için get metodu kullanırız.
 
 
 ```
+class Kisi {
+  constructor(ad, meslek, dyil) {
+    console.log("nesne oluşturuldu");
+    this.ad = ad;
+    this.meslek = meslek;
+    this.dyil = dyil;
+  }
 
+  yasHesapla() {
+    let tarih = new Date().getFullYear();
+    return tarih - this.dyil;
+  }
+
+  get ad(){
+    return this._ad;
+  }
+  set ad(value){
+    if(value.length<3){
+        console.log("isminiz bu kadar kısa olamaz");
+    }
+    this._ad=value
+  }
+}
+
+let kisi1 = new Kisi("al", "mühendis", 1952);
+console.log(kisi1.ad);
+
+Çıktı
+isminiz bu kadar kısa olamaz
 ```
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -810,105 +693,4 @@ console.log(kisi1.yasHesapla());
 
 
 
-
-```
-
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-```
-
-```
 
