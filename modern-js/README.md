@@ -337,6 +337,82 @@ aleyna celik (2) ['istanbul', 'kocaeli']
 
 
 ##### Destructuring
+Destructuring bir obje veya bir array içinden her bir elemanın alınıp bir değişken içine kaydedilmesi.
+
+
+* Array
+
+```
+let name=["aleyna","celik"];
+
+let firstName=name[0];
+let lastName=name[1];
+
+console.log(firstName,lastName);
+
+
+Çıktı
+aleyna celik
+
+```
+
+
+
+Burda dizi ataması yaparak dizinin 0. indexteki eleman firtName e 21. indexteki eleman lastName e aktarılır.
+```
+let name=["aleyna","celik"];
+let [firstName,lastName]=name
+console.log(firstName,lastName);
+
+Çıktı
+aleyna celik
+
+```
+
+
+
+* Object 
+```
+let urun={
+    marka:"Apple",
+    model:"ıphone 14",
+    fiyat:50000
+}
+
+let {marka,model,fiyat}=urun;
+console.log(marka,model,fiyat);
+
+Çıktı
+Apple ıphone 14 50000
+```
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
 
 
 ##### Maps
