@@ -504,29 +504,411 @@ console.log(sayilar);
 
 
 
-
-```
-
-```
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
 ##### Class
+
+* function constructor
+```
+function Kisi(ad,meslek,dyil){
+    this.ad=ad;
+    this.meslek=meslek;
+    this.dyil=dyil;
+}
+
+let emre=new Kisi("emre","mühendis",1998);
+let ahmet=new Kisi("ahmet","mühendis",1999);
+console.log(emre,ahmet);
+
+Çıktı
+Kisi {ad: 'emre', meslek: 'mühendis', dyil: 1998} Kisi {ad: 'ahmet', meslek: 'mühendis', dyil: 1999}
+```
+
+
+
+
+* class
+
+```
+class Kisi {
+    constructor(){
+        console.log("nesne oluşturuldu");
+    }
+}
+
+let kisi1=new Kisi();
+console.log(kisi1);
+
+
+```
+
+![Ekran Görüntüsü (577)](https://user-images.githubusercontent.com/74673470/189537537-db97f30e-b541-47d2-832c-591b3995283e.png)
+
+
+
+
+
+```
+class Kisi {
+    constructor(ad,meslek,dyil){
+        console.log("nesne oluşturuldu");
+    }
+}
+
+let kisi1=new Kisi("ali","mühendis",1998);
+console.log(kisi1);
+
+Çıktı
+Kişi {ad: 'ali', meslek: 'mühendis', dyil: 1998}
+```
+
+![Ekran Görüntüsü (579)](https://user-images.githubusercontent.com/74673470/189537673-89abe32e-1f47-4af3-af28-d541e0fec632.png)
+
+
+
+
+* Function Constructor 
+
+```
+function KisiES5(ad,meslek,dyil){
+    this.ad=ad;
+    this.meslek=meslek;
+    this.dyil=dyil;
+    this.yasHesapla=function(tarih){
+        return tarih-this.dyil;
+    }
+}
+
+console.log(emre.yasHesapla(2022));
+
+
+Çıktı
+24
+```
+
+
+
+
+
+
+
+
+
+* Class Constructor
+```
+class Kisi {
+    constructor(ad,meslek,dyil){
+        console.log("nesne oluşturuldu");
+        this.ad=ad;
+        this.meslek=meslek;
+        this.dyil=dyil;
+        }
+
+        yasHesapla(){
+            let tarih=new Date().getFullYear();
+            return tarih-this.dyil;
+    }
+}
+
+let kisi1=new Kisi("ali","mühendis",1952);
+console.log(kisi1.yasHesapla());
+
+Çıktı
+70
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
 
 
 ##### Getter & Setter
 
 
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##### Inheritance
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
