@@ -389,33 +389,78 @@ Apple ıphone 14 50000
 
 
 
-```
-
-```
-
-
-
-
-
-
-
-```
-
-```
-
-
-
-
-
-
-```
-
-```
-
 
 
 
 ##### Maps
+
+
+```
+const ogrenciler=new Map();
+console.log(ogrenciler);
+```
+
+![Ekran Görüntüsü (567)](https://user-images.githubusercontent.com/74673470/189534248-59770ba1-69f1-4332-b070-371d9ccb37e1.png)
+
+
+
+
+
+
+
+```
+const ogrenciler=new Map();
+//Key value şeklinde ilk yazılanlar key key türü any istediğimiz türden olabilir.
+
+ogrenciler.set(1,"Ali Çörük")
+ogrenciler.set("numara","012458745120");
+ogrenciler.set(true,"dfadad")
+console.log(ogrenciler);
+```
+
+![Ekran Görüntüsü (569)](https://user-images.githubusercontent.com/74673470/189534394-b2b15772-804f-48c7-8220-5937ea25311c.png)
+
+
+
+
+Key bilgisiyle value yi çekme
+```
+const ogrenciler=new Map();
+
+ogrenciler.set(1,"Ali Çörük")
+ogrenciler.set("numara","012458745120");
+ogrenciler.set(true,"dfadad")
+
+let sonuc=ogrenciler.get(1);
+console.log(sonuc);
+
+Çıktı
+Ali Çörük
+```
+
+
+Key değerlerini for döngüsüyle bastırma
+value içinde sadece keys yerine values() yazılır
+
+```
+const ogrenciler=new Map();
+
+
+ogrenciler.set(1,"Ali Çörük")
+ogrenciler.set("numara","012458745120");
+ogrenciler.set(true,"dfadad")
+
+
+for(let i of ogrenciler.keys()){
+    console.log(i);
+}
+
+Çıktı
+1
+numara
+true
+
+```
 
 
 ##### Sets
