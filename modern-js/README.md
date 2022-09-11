@@ -464,6 +464,63 @@ true
 
 
 ##### Sets
+A JavaScript Set is a collection of unique values.
+
+
+
+```
+const sayilar=new Set();
+console.log(sayilar);
+
+```
+
+![Ekran Görüntüsü (571)](https://user-images.githubusercontent.com/74673470/189534960-ed5c31d0-9833-476b-a746-14edcc1b127a.png)
+
+
+
+```
+const sayilar=new Set([1,2,3]);
+
+console.log(sayilar);
+
+```
+![Ekran Görüntüsü (573)](https://user-images.githubusercontent.com/74673470/189535036-8c4142dc-8975-4c4c-9d35-25555df7f51e.png)
+
+
+
+Aynı değerden 2 tane verirsek bir tanesini alır
+```
+const sayilar=new Set();
+sayilar.add(1)
+sayilar.add(2)
+sayilar.add(3)
+sayilar.add(4)
+sayilar.add(4)
+console.log(sayilar);
+
+
+```
+![Ekran Görüntüsü (575)](https://user-images.githubusercontent.com/74673470/189535146-8662b868-3436-48db-bf1c-06d67e63918c.png)
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+```
+
+```
+
+
+
+
 
 
 ##### Class
