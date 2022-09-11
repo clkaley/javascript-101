@@ -658,35 +658,67 @@ isminiz bu kadar kısa olamaz
 
 
 ##### Inheritance
+To create a class inheritance, use the extends keyword.
 
+A class created with a class inheritance inherits all the methods from another class
+
+
+Kişi =>k1,k2
+Öğrenci=>o1,o2 
+kişi içerisindeki metotları tekrar tekrar yazmaktansa kişi class ından miras alırız
+
+
+* Parent Class
+```
+class Kisi{
+    constructor(ad,dogumyili){
+        this.ad=ad;
+        this.dogumyili=dogumyili
+    }
+    yasHesapla(){
+        let tarih=new Date().getFullYear()
+        return  tarih-this.dogumyili;
+    }
+}
 
 ```
 
+
+
+
+
+* Child Class
+```
+class Ogrenci extends Kisi{
+    constructor(ad,dogumyili,okulNumarasi){
+        console.log("öğrenci const");
+        super(ad,dogumyili);
+        this.okulNumarasi=okulNumarasi;
+
+    }
+}
 ```
 
 
 
 
-
-
+Sadece Öğrenciye ait bir method tanımlayıp onu çalıştırma işi
 ```
+class Ogrenci extends Kisi{
+    constructor(ad,dogumyili,okulNumarasi){
+        console.log("öğrenci const");
+        super(ad,dogumyili);
+        this.okulNumarasi=okulNumarasi;
 
-```
-
-
-
-
-
-
-
-
-
-
-
+    }
+    dersCalis(){
+       return `${this.ad} ders çalışıyor`;
+    }
+}
 
 
-```
-
+let ogrenci=new Ogrenci("ahmet",1990,651648615);
+console.log(ogrenci.dersCalis());
 ```
 
 
