@@ -87,3 +87,47 @@ module.exports={
 
 
 #### NPM
+https://www.npmjs.com/
+
+* Herhangi bir paketi yüklemeden önce "package.json" dosyası oluşturulmalıdır.
+
+cmd ye 
+
+```
+npm init 
+
+```
+
+
+* Bu yazıldıktan sonra sorular soruluyor version license name  vb sorular bunun sorulmasını istemiyorsak yine cmd'ye
+
+```
+npm init --yes
+```
+
+
+* Herhangi bir paket indirmek istiyorsak bunun için yukarıda verilen linkten istediğimiz paketi buluyoruz aynı şekilde dizinimize gelip o paketin komutunu yazıyoruz. Enterdan sonra node-module klasörü oluşturulur orda indirdiğimiz paket bulunur.
+
+```
+npm i underscore
+```
+
+![Ekran Görüntüsü (597)](https://user-images.githubusercontent.com/74673470/190855444-0cb1e24a-235f-458c-9b23-80105f88c6e1.png)
+
+
+İndirdiğimiz moduller package.json dosyasının dependencies yani bağımlılıklar kısmında bulunuyor.
+![Ekran Görüntüsü (599)](https://user-images.githubusercontent.com/74673470/190855515-ffcefb13-2359-4ed2-80ee-a43482d7a91e.png)
+
+
+
+```
+var _=require("underscore")
+
+var numbers = [10, 5, 100, 2, 1000];
+_.min(numbers);
+
+console.log(_.min(numbers))
+
+Çıktı
+2
+```
