@@ -131,3 +131,68 @@ console.log(_.min(numbers))
 Çıktı
 2
 ```
+
+
+
+#### Global & Local Package
+paket kurarken cmd ye yazdığımız direkt paketin güncel sürümünü indirir ama biz şu şekilde yazarsak
+
+```
+npm i jquery@2.7
+```
+
+
+
+Bu pakette local paket ama development aşamasında var sadece bu devDependencies kısmına gelir.
+```
+npm i webpack --save-dev
+
+```
+
+
+
+Global paket eklemek için
+
+```
+npm i live-server --global
+
+```
+
+
+
+
+Global paketleri görüntülemek için
+```
+npm list -g
+```
+
+
+
+Versiyon numaralarının anlamları var
+patch-> hata oluşumunda arttırılır
+minor-> yeni özellik eklendiğinde
+major-> köklü değişklik için
+^ bu işaret ise güncellemeyi almak için
+```                     
+"underscore": "^1.13.4" -> major.minor.patch
+```
+
+
+
+
+
+
+
+```
+
+```
+
+
+
+
+
+
+
+```
+
+```
