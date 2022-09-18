@@ -18,3 +18,10 @@ npm i webpack
 ```
 npm i webpack-cli
 ```
+
+
+#### Babel
+
+```
+npm i babel-loader @babel/core
+```
